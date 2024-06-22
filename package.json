@@ -1,18 +1,18 @@
 {
-  "name": "starter-ts",
+  "name": "@namesmt/utils-lambda",
   "type": "module",
   "version": "0.0.0",
   "packageManager": "pnpm@9.4.0",
-  "description": "",
+  "description": "Collection of some useful utilities and types targeting AWS Lambda",
   "author": "NamesMT <dangquoctrung123@gmail.com>",
   "license": "MIT",
   "funding": "https://github.com/sponsors/namesmt",
-  "homepage": "https://github.com/namesmt/starter-ts#readme",
+  "homepage": "https://github.com/namesmt/@namesmt/utils-lambda#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/namesmt/starter-ts.git"
+    "url": "git+https://github.com/namesmt/@namesmt/utils-lambda.git"
   },
-  "bugs": "https://github.com/namesmt/starter-ts/issues",
+  "bugs": "https://github.com/namesmt/@namesmt/utils-lambda/issues",
   "keywords": [],
   "sideEffects": false,
   "exports": {
@@ -48,12 +48,17 @@
     "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
+    "@aws-sdk/client-lambda": "^3.600.0",
+    "@namesmt/utils": "^0.3.1",
+    "@types/aws-lambda": "^8.10.140",
     "consola": "^3.2.3",
-    "std-env": "^3.7.0"
+    "destr": "^2.0.3",
+    "std-env": "^3.7.0",
+    "type-fest": "^4.20.1"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.21.1",
-    "@types/node": "^20.14.7",
+    "@types/node": "^20.14.8",
     "@vitest/coverage-v8": "^1.6.0",
     "eslint": "^9.5.0",
     "lint-staged": "^15.2.7",

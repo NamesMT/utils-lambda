@@ -15,6 +15,7 @@ export default defineBuildConfig({
   ],
   declaration: 'node16',
   clean: true,
+  externals: ['aws-lambda'],
   rollup: {
     esbuild: {
       target: 'esnext',

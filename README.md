@@ -1,4 +1,4 @@
-# starter-ts ![TypeScript heart icon](https://img.shields.io/badge/♡-%23007ACC.svg?logo=typescript&logoColor=white)
+# @namesmt/utils-lambda ![TypeScript heart icon](https://img.shields.io/badge/♡-%23007ACC.svg?logo=typescript&logoColor=white)
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
@@ -6,23 +6,7 @@
 [![Bundlejs][bundlejs-src]][bundlejs-href]
 [![jsDocs.io][jsDocs-src]][jsDocs-href]
 
-**starter-ts** is my starter/boilerplate for typescript projects.  
-This template assumes you are using Linux, or the included Dev Container.
-
-### Notes (remove this section when you use the template)
-#### * Do a global replace for `starter-ts` and `NamesMT`
-
-#### * I'm heavily inspired by [antfu](https://github.com/antfu) and [UnJS](https://github.com/unjs), some notable things:
-- [antfu/ni](https://github.com/antfu/ni)
-- [antfu/taze](https://github.com/antfu/taze)
-- [antfu/vscode-settings](https://github.com/antfu/vscode-settings)
-- [antfu/eslint-config](https://github.com/antfu/eslint-config)
-  - Style error silencing is commented out
-
-#### * Script: `play` vs `play:useBuild` for playground testing?
-- `play` script uses `unbuild`'s [passive watcher (stub mode)](https://github.com/unjs/unbuild#-passive-watcher), which allows you to execute new code **live** without rebuilding the project. The cons is TS declarations are not available.
-- `play:useBuild` builds a static version of the package, useful for testing the actual look/behavior when shipping.
-### END NOTE
+**@namesmt/utils-lambda** is a collection of some useful utilities and types targeting AWS Lambda.
 
 ## Features
 - [x] TypeScript ready!
@@ -31,19 +15,19 @@ This template assumes you are using Linux, or the included Dev Container.
 ### Install package:
 ```sh
 # npm
-npm install starter-ts
+npm install @namesmt/utils-lambda
 
 # yarn
-yarn add starter-ts
+yarn add @namesmt/utils-lambda
 
 # pnpm (recommended)
-pnpm install starter-ts
+pnpm install @namesmt/utils-lambda
 ```
 
 ### Import:
 ```ts
 // ESM
-import { hello } from 'starter-ts'
+import { decodeResponse } from '@namesmt/utils-lambda'
 ```
 
 ## Roadmap
@@ -56,15 +40,15 @@ import { hello } from 'starter-ts'
 
 <!-- Badges -->
 
-[npm-version-src]: https://img.shields.io/npm/v/starter-ts?labelColor=18181B&color=F0DB4F
-[npm-version-href]: https://npmjs.com/package/starter-ts
-[npm-downloads-src]: https://img.shields.io/npm/dm/starter-ts?labelColor=18181B&color=F0DB4F
-[npm-downloads-href]: https://npmjs.com/package/starter-ts
-[codecov-src]: https://img.shields.io/codecov/c/gh/namesmt/starter-ts/main?labelColor=18181B&color=F0DB4F
-[codecov-href]: https://codecov.io/gh/namesmt/starter-ts
-[license-src]: https://img.shields.io/github/license/namesmt/starter-ts.svg?labelColor=18181B&color=F0DB4F
-[license-href]: https://github.com/namesmt/starter-ts/blob/main/LICENSE
-[bundlejs-src]: https://img.shields.io/bundlejs/size/starter-ts?labelColor=18181B&color=F0DB4F
-[bundlejs-href]: https://bundlejs.com/?q=starter-ts
+[npm-version-src]: https://img.shields.io/npm/v/@namesmt/utils-lambda?labelColor=18181B&color=F0DB4F
+[npm-version-href]: https://npmjs.com/package/@namesmt/utils-lambda
+[npm-downloads-src]: https://img.shields.io/npm/dm/@namesmt/utils-lambda?labelColor=18181B&color=F0DB4F
+[npm-downloads-href]: https://npmjs.com/package/@namesmt/utils-lambda
+[codecov-src]: https://img.shields.io/codecov/c/gh/namesmt/@namesmt/utils-lambda/main?labelColor=18181B&color=F0DB4F
+[codecov-href]: https://codecov.io/gh/namesmt/@namesmt/utils-lambda
+[license-src]: https://img.shields.io/github/license/namesmt/@namesmt/utils-lambda.svg?labelColor=18181B&color=F0DB4F
+[license-href]: https://github.com/namesmt/@namesmt/utils-lambda/blob/main/LICENSE
+[bundlejs-src]: https://img.shields.io/bundlejs/size/@namesmt/utils-lambda?labelColor=18181B&color=F0DB4F
+[bundlejs-href]: https://bundlejs.com/?q=@namesmt/utils-lambda
 [jsDocs-src]: https://img.shields.io/badge/Check_out-jsDocs.io---?labelColor=18181B&color=F0DB4F
-[jsDocs-href]: https://www.jsdocs.io/package/starter-ts
+[jsDocs-href]: https://www.jsdocs.io/package/@namesmt/utils-lambda
