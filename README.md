@@ -44,10 +44,10 @@ import { decodeResponse } from '@namesmt/utils-lambda'
 [npm-version-href]: https://npmjs.com/package/@namesmt/utils-lambda
 [npm-downloads-src]: https://img.shields.io/npm/dm/@namesmt/utils-lambda?labelColor=18181B&color=F0DB4F
 [npm-downloads-href]: https://npmjs.com/package/@namesmt/utils-lambda
-[codecov-src]: https://img.shields.io/codecov/c/gh/namesmt/@namesmt/utils-lambda/main?labelColor=18181B&color=F0DB4F
-[codecov-href]: https://codecov.io/gh/namesmt/@namesmt/utils-lambda
-[license-src]: https://img.shields.io/github/license/namesmt/@namesmt/utils-lambda.svg?labelColor=18181B&color=F0DB4F
-[license-href]: https://github.com/namesmt/@namesmt/utils-lambda/blob/main/LICENSE
+[codecov-src]: https://img.shields.io/codecov/c/gh/namesmt/utils-lambda/main?labelColor=18181B&color=F0DB4F
+[codecov-href]: https://codecov.io/gh/namesmt/utils-lambda
+[license-src]: https://img.shields.io/github/license/namesmt/utils-lambda.svg?labelColor=18181B&color=F0DB4F
+[license-href]: https://github.com/namesmt/utils-lambda/blob/main/LICENSE
 [bundlejs-src]: https://img.shields.io/bundlejs/size/@namesmt/utils-lambda?labelColor=18181B&color=F0DB4F
 [bundlejs-href]: https://bundlejs.com/?q=@namesmt/utils-lambda
 [jsDocs-src]: https://img.shields.io/badge/Check_out-jsDocs.io---?labelColor=18181B&color=F0DB4F

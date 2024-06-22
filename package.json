@@ -7,12 +7,12 @@
   "author": "NamesMT <dangquoctrung123@gmail.com>",
   "license": "MIT",
   "funding": "https://github.com/sponsors/namesmt",
-  "homepage": "https://github.com/namesmt/@namesmt/utils-lambda#readme",
+  "homepage": "https://github.com/namesmt/utils-lambda#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/namesmt/@namesmt/utils-lambda.git"
+    "url": "git+https://github.com/namesmt/utils-lambda.git"
   },
-  "bugs": "https://github.com/namesmt/@namesmt/utils-lambda/issues",
+  "bugs": "https://github.com/namesmt/utils-lambda/issues",
   "keywords": [],
   "sideEffects": false,
   "exports": {
