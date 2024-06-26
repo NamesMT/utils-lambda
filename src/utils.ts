@@ -79,7 +79,7 @@ export function pickEventContextV2<M extends boolean = false>(event: APIGatewayP
 > {
   return options.minimal
     // @ts-expect-error Some weird PickDeep bug
-    ? { ...objectPick(event, ['routeKey', 'rawPath', 'rawQueryString', 'headers', 'requestContext']), requestContext: { http: { method: event.requestContext?.http?.method } } }
+    ? { ...objectPick(event, ['routeKey', 'rawPath', 'rawQueryString', 'headers']), requestContext: { http: { method: event.requestContext?.http?.method } } }
     : objectPick(event, ['routeKey', 'rawPath', 'rawQueryString', 'headers', 'requestContext', 'isBase64Encoded'])
 }
 
