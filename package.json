@@ -2,7 +2,7 @@
   "name": "@namesmt/utils-lambda",
   "type": "module",
   "version": "0.0.2",
-  "packageManager": "pnpm@9.4.0",
+  "packageManager": "pnpm@9.6.0",
   "description": "Collection of some useful utilities and types targeting AWS Lambda",
   "author": "NamesMT <dangquoctrung123@gmail.com>",
   "license": "MIT",
@@ -48,29 +48,30 @@
     "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
-    "@aws-sdk/client-lambda": "^3.600.0",
-    "@namesmt/utils": "^0.3.1",
-    "@types/aws-lambda": "^8.10.140",
+    "@aws-sdk/client-lambda": "^3.616.0",
+    "@namesmt/utils": "^0.4.1",
+    "@types/aws-lambda": "^8.10.142",
     "consola": "^3.2.3",
     "destr": "^2.0.3",
     "std-env": "^3.7.0",
-    "type-fest": "^4.20.1"
+    "type-fest": "^4.23.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.21.1",
-    "@types/node": "^20.14.8",
-    "@vitest/coverage-v8": "^1.6.0",
-    "eslint": "^9.5.0",
+    "@antfu/eslint-config": "^2.23.2",
+    "@types/node": "^20.14.12",
+    "@vitest/coverage-v8": "^2.0.4",
+    "eslint": "^9.7.0",
     "lint-staged": "^15.2.7",
     "simple-git-hooks": "^2.11.1",
-    "tsx": "^4.15.7",
-    "typescript": "^5.5.2",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.4",
     "unbuild": "^2.0.0",
-    "vitest": "^1.6.0"
+    "vitest": "^2.0.4"
   },
   "pnpm": {
     "overrides": {
-      "hasown": "npm:@nolyfill/hasown@latest"
+      "hasown": "npm:@nolyfill/hasown@^1",
+      "is-core-module": "npm:@nolyfill/is-core-module@^1"
     }
   },
   "simple-git-hooks": {
