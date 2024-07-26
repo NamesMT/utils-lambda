@@ -16,8 +16,8 @@ importers:
         specifier: ^3.616.0
         version: 3.616.0
       '@namesmt/utils':
-        specifier: ^0.4.1
-        version: 0.4.1
+        specifier: '>=0.5.0'
+        version: 0.5.0
       '@types/aws-lambda':
         specifier: ^8.10.142
         version: 8.10.142
@@ -853,8 +853,8 @@ packages:
     resolution: {integrity: sha512-f5DRIOZf7wxogefH03RjMPMdBF7ADTWUMoOs9kaJo06EfwF+aFhMZMDZxHg/Xe12hptN9xoZjGso2fdjapBRIA==}
     engines: {node: '>=10'}
 
-  '@namesmt/utils@0.4.1':
-    resolution: {integrity: sha512-Hjd58gPeuJqI+QR5eN7g58SWDUL5jLX3pymhcqo9yfyhPebhv5xWwPnYDmjXjE7mhMqB+vrle7xRExQIe+eO5g==}
+  '@namesmt/utils@0.5.0':
+    resolution: {integrity: sha512-aXLT1jW/kqJsdvJvpvVOPxsv/i1GSWG71B7xA2UjX9OnVjX7rCzbABQpjtcTiTIzVzq/S1TW3LZnsbJqw80HkQ==}
     engines: {node: '>=18.0.0'}
 
   '@nodelib/fs.scandir@2.1.5':
@@ -4282,11 +4282,9 @@ snapshots:
       string-argv: 0.3.2
       type-detect: 4.0.8
 
-  '@namesmt/utils@0.4.1':
+  '@namesmt/utils@0.5.0':
     dependencies:
       '@antfu/utils': 0.7.10
-      consola: 3.2.3
-      std-env: 3.7.0
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
