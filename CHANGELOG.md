@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.1
+
+[compare changes](https://github.com/namesmt/utils-lambda/compare/v0.1.0...v0.1.1)
+
+### 🏡 Chore
+
+- Accept broader range of `@namesmt/utils` ([6416e5b](https://github.com/namesmt/utils-lambda/commit/6416e5b))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](http://github.com/NamesMT))
+
 ## v0.1.0
 
 [compare changes](https://github.com/namesmt/utils-lambda/compare/v0.0.3...v0.1.0)
