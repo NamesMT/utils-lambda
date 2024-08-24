@@ -31,8 +31,6 @@ import { decodeResponse } from '@namesmt/utils-lambda'
 ```
 
 ## Roadmap
-
-- [x] Setting up Dev Container
 - [ ] Become the legendary 10000x developer
 
 ## License [![License][license-src]][license-href]
