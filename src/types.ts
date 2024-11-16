@@ -1,8 +1,8 @@
 import type {
   ALBEvent,
+  AmplifyGraphQlResolverEvent,
   APIGatewayProxyEvent,
   APIGatewayProxyEventV2,
-  AmplifyGraphQlResolverEvent,
   CloudWatchAlarmEvent,
   CodeCommitTriggerEvent,
   CodePipelineCloudWatchEvent,
@@ -24,14 +24,13 @@ import type {
   PreTokenGenerationV2TriggerEvent,
   S3Event,
   S3NotificationEvent,
+  SelfManagedKafkaEvent,
   SESEvent,
   SNSEvent,
   SQSEvent,
-  SelfManagedKafkaEvent,
   UserMigrationTriggerEvent,
   VerifyAuthChallengeResponseTriggerEvent,
 } from 'aws-lambda'
-
 import type { ValueOf } from 'type-fest'
 
 /**
