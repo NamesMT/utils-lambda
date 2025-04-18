@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v0.1.4
+
+[compare changes](https://github.com/namesmt/utils-lambda/compare/v0.1.3...v0.1.4)
+
+### 🏡 Chore
+
+- Housekeep ([873d760](https://github.com/namesmt/utils-lambda/commit/873d760))
+
+### 🎨 Styles
+
+- Apply lint fixes ([cc14d27](https://github.com/namesmt/utils-lambda/commit/cc14d27))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](https://github.com/NamesMT))
+
 ## v0.1.3
 
 [compare changes](https://github.com/namesmt/utils-lambda/compare/v0.1.2...v0.1.3)
