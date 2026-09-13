@@ -2,7 +2,7 @@
   "name": "@namesmt/utils-lambda",
   "type": "module",
   "version": "0.1.4",
-  "packageManager": "pnpm@10.34.5",
+  "packageManager": "pnpm@12.4.1",
   "description": "Collection of some useful utilities and types targeting AWS Lambda",
   "author": "NamesMT <dangquoctrung123@gmail.com>",
   "license": "MIT",
