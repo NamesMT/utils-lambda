@@ -68,15 +68,18 @@ export function eventMethodUrl(event: LambdaRequestEvent): [string, string] {
 
 /**
  * This utility picks the following keys from the event: routeKey, rawPath, rawQueryString, headers, requestContext, isBase64Encoded
- * 
- * @param {boolean} [options.minimal] - pick only: routeKey, rawPath, headers, requestContext.http.method
+ *
+ * @param event - the API Gateway v2 event to pick context from
+ * @param options - control which fields are picked
+ * @param options.minimal - pick only: routeKey, rawPath, headers, requestContext.http.method
  */
-export function pickEventContextV2<M extends boolean = false>(event: APIGatewayProxyEventV2, options: { minimal?: M } = {}): PickDeep<
+export function pickEventContextV2<M extends boolean = false>(event: APIGatewayProxyEventV2, options?: { minimal?: M }): PickDeep<
   APIGatewayProxyEventV2,
   M extends false
     ? ('routeKey' | 'rawPath' | 'rawQueryString' | 'headers' | 'requestContext' | 'isBase64Encoded')
     : ('routeKey' | 'rawPath' | 'headers' | 'requestContext.http.method')
-> {
+>
+export function pickEventContextV2(event: APIGatewayProxyEventV2, options: { minimal?: boolean } = {}): PickDeep<APIGatewayProxyEventV2, 'routeKey' | 'rawPath' | 'rawQueryString' | 'headers' | 'requestContext' | 'isBase64Encoded'> {
   return options.minimal
     // @ts-expect-error Some weird PickDeep bug
     ? { ...objectPick(event, ['routeKey', 'rawPath', 'rawQueryString', 'headers']), requestContext: { http: { method: event.requestContext?.http?.method } } }
