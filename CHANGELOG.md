@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v0.1.5
+
+[compare changes](https://github.com/namesmt/utils-lambda/compare/v0.1.4...v0.1.5)
+
+### 🩹 Fixes
+
+- Resolve PickDeep type regression and add test suite ([e412aab](https://github.com/namesmt/utils-lambda/commit/e412aab))
+- Use relative paths (drop deprecated `baseUrl`) ([9d5b373](https://github.com/namesmt/utils-lambda/commit/9d5b373))
+
+### 🏡 Chore
+
+- Migrate to pnpm 12 ([887b1ad](https://github.com/namesmt/utils-lambda/commit/887b1ad))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](https://github.com/NamesMT))
+
 ## v0.1.4
 
 [compare changes](https://github.com/namesmt/utils-lambda/compare/v0.1.3...v0.1.4)
