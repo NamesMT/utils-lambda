@@ -58,8 +58,11 @@ export function eventMethodUrl(event: LambdaRequestEvent): [string, string] {
   if ('rawPath' in event) {
     return [event.requestContext.http.method, event.rawPath]
   }
-  else if ('path' in event) {
+  else if ('httpMethod' in event) {
     return [event.httpMethod, event.path]
+  }
+  else if ('method' in event) {
+    return [event.method, event.path]
   }
   else {
     throw new Error('Invalid event')
