@@ -1,6 +1,30 @@
 # Changelog
 
 
+## v0.1.6
+
+[compare changes](https://github.com/namesmt/utils-lambda/compare/v0.1.5...v0.1.6)
+
+### 🚀 Enhancements
+
+- Add VPC Lattice event types ([c012f9c](https://github.com/namesmt/utils-lambda/commit/c012f9c))
+
+### 📦 Build
+
+- ⚠️  Migrate to tsdown with native import maps ([ad631bc](https://github.com/namesmt/utils-lambda/commit/ad631bc))
+
+### 🤖 CI
+
+- Add CI workflow ([e76b63f](https://github.com/namesmt/utils-lambda/commit/e76b63f))
+
+#### ⚠️ Breaking Changes
+
+- ⚠️  Migrate to tsdown with native import maps ([ad631bc](https://github.com/namesmt/utils-lambda/commit/ad631bc))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](https://github.com/NamesMT))
+
 ## v0.1.5
 
 [compare changes](https://github.com/namesmt/utils-lambda/compare/v0.1.4...v0.1.5)
