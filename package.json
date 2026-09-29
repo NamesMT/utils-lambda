@@ -7,13 +7,26 @@
   "author": "NamesMT <dangquoctrung123@gmail.com>",
   "license": "MIT",
   "funding": "https://github.com/sponsors/namesmt",
-  "homepage": "https://github.com/namesmt/utils-lambda#readme",
+  "homepage": "https://github.com/NamesMT/utils-lambda#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/namesmt/utils-lambda.git"
+    "url": "git+https://github.com/NamesMT/utils-lambda.git"
   },
-  "bugs": "https://github.com/namesmt/utils-lambda/issues",
-  "keywords": [],
+  "bugs": "https://github.com/NamesMT/utils-lambda/issues",
+  "keywords": [
+    "aws",
+    "aws-lambda",
+    "lambda",
+    "serverless",
+    "typescript",
+    "esm",
+    "utils",
+    "utilities",
+    "api-gateway",
+    "lambda-handler",
+    "event-parser",
+    "compression"
+  ],
   "sideEffects": false,
   "source": "./src/index.ts",
   "imports": {

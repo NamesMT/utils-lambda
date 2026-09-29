@@ -51,3 +51,5 @@ One-time trusted-publisher setup is in the README.
 - `prepublishOnly` runs `pnpm run build`, so a manual `npm publish` rebuilds after the workflow's build.
 - changelogen `--clean` fails when `git status --porcelain` is non-empty; ignored files such as
   `dist/` do not count.
+- `compressV2*` and `decompress*` only understand `br` and `gzip`; any other `accept-encoding` or
+  `contentEncoding` throws, so callers must gate on the header rather than pass it through.
