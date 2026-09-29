@@ -1,6 +1,27 @@
 # Changelog
 
 
+## v0.1.7
+
+[compare changes](https://github.com/NamesMT/utils-lambda/compare/v0.1.6...v0.1.7)
+
+### 📖 Documentation
+
+- Add npm metadata and correct repository URL casing ([ce0c2b4](https://github.com/NamesMT/utils-lambda/commit/ce0c2b4))
+
+### 🏡 Chore
+
+- **devcontainer:** Migrate from Alpine (musl) to Arch (glibc) image ([5011354](https://github.com/NamesMT/utils-lambda/commit/5011354))
+- **devcontainer:** Bootstrap pnpm via corepack when missing ([8469ca6](https://github.com/NamesMT/utils-lambda/commit/8469ca6))
+
+### 🤖 CI
+
+- **release:** Dispatch releases by hand and add an AGENTS.md ([be5bd6e](https://github.com/NamesMT/utils-lambda/commit/be5bd6e))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](https://github.com/NamesMT))
+
 ## v0.1.6
 
 [compare changes](https://github.com/namesmt/utils-lambda/compare/v0.1.5...v0.1.6)
