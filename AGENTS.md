@@ -75,6 +75,5 @@ intent; docs one idea per sentence, cut what would not change what a reader does
 
 ## User-facing docs
 
-`README.md` is for a person: concise first read, depth behind `<details>` spoilers. There is no
-`docs/` here and no generated media, so the README is the whole user-facing surface. Docs ship with
-the change, in the same commit.
+`README.md` is for a person: concise first read. There is no `docs/` here and no generated media,
+so the README is the whole user-facing surface. Docs ship with the change, in the same commit.
