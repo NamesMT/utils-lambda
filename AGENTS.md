@@ -51,6 +51,29 @@ pnpm run release:preview        # print the changelog the next release would get
 - ESM only: `"type": "module"` with an `import`-only `exports` map; do not add a CJS build.
 - Keep the local `LatticeProxyEventV2` types in `src/types.ts` until `@types/aws-lambda` ships them.
 
+## How to work here
+
+- Check who calls it before you change it; say when impact is unclear rather than guessing.
+- Never overwrite or delete a large section you have not understood; do not invent requirements —
+  surface what looks needed.
+- Report the risk, not only the change: correctness, security, operational, integration.
+- **Fix the root cause, not the instance.** One bug under several names — a copied helper, a rule
+  stated twice, a guard bypassed by a second path — is a class: fix it with one implementation, one
+  guard. That is the work, not a follow-up to ask for.
+- **Verify before claiming, and say what you checked.** A green test proves only what it asserts — **break the thing it guards and watch it fail.** If it still passes, either the test is decoration or a different guard is running; find out which. Where a stub cannot answer the question, drive the real thing. Mark anything unverified as unverified.
+- If recall of this project is missing, read AGENTS.md + `git log` before acting.
+
+## Conciseness
+
+**Prune verbose, keep correctness** — code, comments, docs alike. A comment only for non-obvious
+intent; docs one idea per sentence, cut what would not change what a reader does. Delete history
+`git log` already holds — keep the rule, not the story. Never drop a caveat to save a line.
+
+## User-facing docs
+
+`README.md` is for a person: concise first read. There is no `docs/` here and no generated media,
+so the README is the whole user-facing surface. Docs ship with the change, in the same commit.
+
 ## Releasing
 
 Version-first and manual: dispatch **Actions → Release → Run workflow** with the version — that is the only publish path, a pushed tag publishes nothing.
@@ -67,27 +90,3 @@ One-time trusted-publisher setup is in the README.
   `dist/` do not count.
 - `compressV2*` and `decompress*` only understand `br` and `gzip`; any other `accept-encoding` or
   `contentEncoding` throws, so callers must gate on the header rather than pass it through.
-
-## How to work here
-
-- Check who calls it before you change it; say when impact is unclear rather than guessing.
-- Never overwrite or delete a large section you have not understood; do not invent requirements —
-  surface what looks needed.
-- Report the risk, not only the change: correctness, security, operational, integration.
-- **Fix the root cause, not the instance.** One bug under several names — a copied helper, a rule
-  stated twice, a guard bypassed by a second path — is a class: fix it with one implementation, one
-  guard. That is the work, not a follow-up to ask for.
-- Verify before claiming, and say which direction you checked; a passing test is not evidence it
-  pinned anything.
-- If recall of this project is missing, read AGENTS.md + `git log` before acting.
-
-## Conciseness (applies everywhere)
-
-**Prune verbose, keep correctness** — code, comments, docs alike. A comment only for non-obvious
-intent; docs one idea per sentence, cut what would not change what a reader does. Delete history
-`git log` already holds — keep the rule, not the story. Never drop a caveat to save a line.
-
-## User-facing docs
-
-`README.md` is for a person: concise first read. There is no `docs/` here and no generated media,
-so the README is the whole user-facing surface. Docs ship with the change, in the same commit.
